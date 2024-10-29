@@ -1,6 +1,17 @@
+<script>
+import Navbar from "@/components/Navbar.vue";
+ 
+export default {
+  components: {
+    Navbar,
+  },
+};
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <Navbar />
+    <!-- <Preloader />  -->
+    <NuxtPage />
+  </NuxtLayout>
 </template>
